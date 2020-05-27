@@ -1,5 +1,11 @@
 # Probot: Stale
 
+
+**WARNING** fork of probot/stale, which is severly out-of-date. patches and issues
+are present in their repo, waiting to be updated. this package should be removed
+when probot/stale updates their dep stack and is first-class library compatible.
+https://github.com/probot/stale/issues/253 is the major gate
+
 > A GitHub App built with [Probot](https://github.com/probot/probot) that closes abandoned Issues and Pull Requests after a period of inactivity.
 
 [![](https://cloud.githubusercontent.com/assets/173/23858697/4885f0d6-07cf-11e7-96ed-716948027bbc.png)](https://github.com/probot/demo/issues/2)

@@ -1,6 +1,5 @@
 require('newrelic')
 
-const getConfig = require('probot-config')
 const createScheduler = require('probot-scheduler')
 const Stale = require('./lib/stale')
 
@@ -51,7 +50,7 @@ module.exports = async app => {
   }
 
   async function forRepository (context) {
-    let config = await getConfig(context, 'stale.yml')
+    let config = await context.config('stale.yml')
 
     if (!config) {
       scheduler.stop(context.payload.repository)

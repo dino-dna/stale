@@ -75,7 +75,7 @@ describe('stale', () => {
       prs.push({ number: i, labels: labels })
     }
 
-    github.search.issues = ({ q, sort, order, per_page }) => {
+    github.search.issuesAndPullRequests = ({ q, sort, order, per_page }) => {
       let items = []
       if (q.includes('is:pr')) {
         items = items.concat(prs.slice(0, per_page))
